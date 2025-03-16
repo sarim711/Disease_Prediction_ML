@@ -1,7 +1,8 @@
+
 # **Parkinson’s Disease Detection Using SVM**
 
 ## **Overview**
-This project focuses on detecting **Parkinson’s Disease** using **Support Vector Machine (SVM)** classification based on **biomedical voice measurements**. The dataset consists of vocal features extracted from individuals, and the goal is to classify whether a person has **Parkinson’s Disease (status = 1)** or is **healthy (status = 0).**
+This project focuses on detecting **Parkinson’s Disease** using **Support Vector Machine (SVM)** classification based on **biomedical voice measurements**. The dataset consists of vocal features extracted from individuals, and the goal is to classify whether a person has **Parkinson’s Disease (`status = 1`)** or is **healthy (`status = 0`)**.
 
 ---
 
@@ -17,12 +18,25 @@ This project focuses on detecting **Parkinson’s Disease** using **Support Vect
 ### **Features in the Dataset**
 The dataset includes **frequency, amplitude, and nonlinear dynamic features** related to vocal impairments caused by Parkinson’s Disease.
 
-**Categories of Features:**
-- **Fundamental Frequency**: Measures like `MDVP:Fo(Hz)`, `MDVP:Fhi(Hz)`, `MDVP:Flo(Hz)`.
-- **Jitter (Frequency Perturbation)**: Measures variations in vocal frequency.
-- **Shimmer (Amplitude Perturbation)**: Captures variations in voice amplitude.
-- **Noise-to-Harmonics & Harmonics-to-Noise Ratio**: Evaluates voice clarity.
-- **Nonlinear Dynamical Complexity**: Features like `RPDE`, `DFA`, `spread1`, `spread2`, `D2`, and `PPE`.
+#### **Categories of Features:**
+- **Fundamental Frequency**  
+  - `MDVP:Fo(Hz)`, `MDVP:Fhi(Hz)`, `MDVP:Flo(Hz)`  
+
+- **Jitter (Frequency Perturbation)**  
+  - Measures variations in vocal frequency  
+  - `MDVP:Jitter(%)`, `MDVP:Jitter(Abs)`, `MDVP:RAP`, `MDVP:PPQ`, `Jitter:DDP`  
+
+- **Shimmer (Amplitude Perturbation)**  
+  - Captures variations in voice amplitude  
+  - `MDVP:Shimmer`, `MDVP:Shimmer(dB)`, `Shimmer:APQ3`, `Shimmer:APQ5`, `MDVP:APQ`, `Shimmer:DDA`  
+
+- **Noise-to-Harmonics & Harmonics-to-Noise Ratio**  
+  - Evaluates voice clarity  
+  - `NHR`, `HNR`  
+
+- **Nonlinear Dynamical Complexity**  
+  - Features indicating variations in speech patterns  
+  - `RPDE`, `DFA`, `spread1`, `spread2`, `D2`, `PPE`  
 
 ---
 
@@ -41,14 +55,8 @@ The dataset includes **frequency, amplitude, and nonlinear dynamic features** re
 ---
 
 ## **Results**
-- The **SVM model** was successfully trained and tested.
-- The **accuracy score** was used to assess its performance.
-- The model provides **reliable predictions** for Parkinson’s Disease detection using vocal features.
+- The **SVM model** was successfully trained and tested.  
+- The **accuracy score** was used to assess its performance.  
+- The model provides **reliable predictions** for Parkinson’s Disease detection using vocal features.  
 
----
-
-## **How to Use This Project**
-1. Open the **Parkinson_Disease_Detection.ipynb** file in **Google Colab** or **Jupyter Notebook**.  
-2. Ensure the dataset is available before running the notebook.  
-3. Execute the notebook cells step by step to see the **data analysis, model training, and evaluation results**.
 
