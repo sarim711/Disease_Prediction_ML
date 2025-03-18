@@ -32,16 +32,16 @@ This project is a **machine learning model** designed to **detect the presence o
 ---
 
 ##  Model Development
-### ** Data Preprocessing**
+###  Data Preprocessing
  Handled missing values in `ca` and `thal`  
  Standardized numerical features  
  Converted categorical variables into numeric form  
 
-### **2️⃣ Model Training & Selection**
+### Model Training & Selection
  **Logistic Regression** (Best Model) → 83% accuracy  
  Tuned hyperparameters using **GridSearchCV** for optimal performance  
 
-### ** Model Evaluation**
+###  Model Evaluation
  **Accuracy Score:** 83%  
  **Cross-Validation Score:** Ensured model stability  
 
